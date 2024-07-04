@@ -27,7 +27,14 @@ setup(
 
     packages=find_packages(exclude=('tests',)),
 
-    install_requires=[],
+    install_requires=['click', 'slack_sdk'],
+
+    entry_points={
+        'console_scripts': [
+            'slacker=slacker.cli:slacker',
+            
+            ],
+    },
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
