@@ -15,7 +15,7 @@ Options:
 
 ```
 Python example:
-```{python}
+```python
 from time import sleep
 from slacker.utils import send_message
 
