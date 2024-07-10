@@ -14,10 +14,22 @@ Options:
   --help  Show this message and exit.
 
 ```
+Python example:
+```
+from time import sleep
+from slacker.utils import send_message
+
+a = 0
+for i in range(5):
+  a+=1
+  sleep(1)
+send_message('Done!')
+send_message(f'a = {a}')
+```
 
 Use cases:
 1. Install in an ipykernel and call `send_message` to notify you on status of jupyter notebook code blocks.
-2. Wrap into a shell function to notify you of exit status of a command that takes a long time to run.
+2. Implement into a shell function to notify you of exit status of a command that takes a long time to run.
 3. Other actions involving python or shell where one might benefit from a slack messge.
 
 
