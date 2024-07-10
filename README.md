@@ -13,6 +13,8 @@ slacker [OPTIONS] MESSAGE
 Options:
   --help  Show this message and exit.
 
+Example:
+sleep 5 && slacker "Hello World after 5 seconds!"
 ```
 Python example:
 ```python
