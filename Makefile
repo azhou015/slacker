@@ -2,7 +2,7 @@ PACKAGE_NAME := slacker
 
 .PHONY: install
 install:
-	pip install .
+	pip install -e .
 
 .PHONY: install-dev 
 install-dev:
