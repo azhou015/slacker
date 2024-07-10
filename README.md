@@ -45,7 +45,9 @@ export SLACK_BOT_TOKEN="xox-**************"
 9. To add support for jupyter-lab/notebook, activate the environment with the desired ipykernel and `pip install -e`.  If step 8 was performed, the channel ID should already be set.
 Locate the `kernel.json` file for the ipykernel. ex: `/home/andy.zhou/.local/share/jupyter/kernels/my_conda_env/kernel.json`
 10. Add an `env` entry into the `kernel.json` file: 
-```"env": {"SLACK_BOT_TOKEN":"xox**************"},```
+```
+"env": {"SLACK_BOT_TOKEN":"xox**************"},
+```
 
 Authors
 -------
