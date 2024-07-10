@@ -44,18 +44,8 @@ by having an editable install with `pip install . -e`, we then need to modify li
 # In your .zshrc or .bashrc:
 export SLACK_BOT_TOKEN="xox-**************"
 ```
-
-Requirements
-^^^^^^^^^^^^
-
-Compatibility
--------------
-
-Licence
--------
-
 Authors
 -------
 
-`slacker` was written by `Andy Zhou <andy.zhou@czbiohub.org>`_.
+`slacker` was written by `Andy Zhou <andy.zhou@czbiohub.org>`.
 
