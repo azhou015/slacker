@@ -49,19 +49,10 @@ You will need a bot token from slack.  Go to the slack [app page](https://api.sl
 5. On the management sidebar of the app, click "OAuth & Permissions".
 6. Scroll down to Scopes and add a bot token scope.  Choose the `chat:write` permission for the bot token scope.
 7. Install app to workspace by clicking the install to workspace button.  This will provide you the "Bot User Oauth Token".
-
-This token will then need to be added to your environment as a variable `SLACK_BOT_TOKEN`
-```
-# In your .zshrc or .bashrc:
-export SLACK_BOT_TOKEN="xox-**************"
-```
-8. By having an editable install with `pip install -e .`, we then need to modify lines in `slacker/utils.py` to change the bot name and channel ID to the channel ID of your bot.
-9. To add support for jupyter-lab/notebook, activate the environment with the desired ipykernel and `pip install -e`. If step 8 was performed, the channel ID should already be set.
-10. Locate the `kernel.json` file for the ipykernel. ex: `/home/andy.zhou/.local/share/jupyter/kernels/my_conda_env/kernel.json`
-11. Add an `env` entry into the `kernel.json` file: 
-```
-"env": {"SLACK_BOT_TOKEN":"xox**************"},
-```
+8. By having an editable install with `pip install -e .`, we then need to modify lines in `slacker/config.py` to add the oauth token as well as give the bot the name you chose.
+9. In the Slack app, right click on the conversation you want the bot to post in (could be the bot's channel or your personal channel) and choose `view conversation details`
+10. Note the `Channel ID` and edit `slacker/config.py` to the correct channel ID.
+11. Start sending messages!
 
 Authors
 -------
